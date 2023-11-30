@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  <style>
+    body {
+      background: linear-gradient(135deg, #ffffff, rgb(43, 43, 119));
+      color: #fff;
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+    .contenedor {
+      background-color: #ffffff;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      overflow: hidden;
+      width: 80%;
+      max-width: 600px;
+    }
+
+    .producto {
+      padding: 20px;
+      border-bottom: 1px solid #ddd;
+      text-align: center;
+      color: black;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      margin-bottom: 15px;
+      box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    }
+
+    h2 {
+      color: rgb(43, 43, 119) ;
+    }
+
+    .precio {
+      font-size: 1.2em;
+      color: rgb(43, 43, 119);
+      margin-top: 5px;
+    }
+
+    .boton-volver {
+      background-color: #3498db;
+      color: #fff;
+      padding: 10px 15px;
+      text-decoration: none;
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      border: none;
+      border-radius: 5px;
+      margin: 20px auto;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .boton-volver:hover {
+      background-color: rgb(43, 43, 119);;
+    }
+  </style>
+</head>
+<body>
+
+<div class="contenedor">
+  <div class="producto">
+    <h2>Productos seleccionados</h2>
+    <img src="/static/descarga.jpg" alt="Imagen del Artículo">
+    <p>Grand Theft Auto VI</p>
+    <p class="precio">Precio: $100.00</p>
+  </div>
+
+  <!-- Agrega más productos aquí según sea necesario -->
+
+  <a href="/" class="boton-volver">Seguir comprando</a>
+</div>
+
+</body>
+</html>
